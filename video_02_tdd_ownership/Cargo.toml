@@ -1,0 +1,7 @@
+[package]
+name = "C_Structs_Methods"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+player = "0.1.1"

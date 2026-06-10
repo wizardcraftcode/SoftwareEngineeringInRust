@@ -1,0 +1,5 @@
+[workspace]
+members = [
+    "video_01_the_diagram",
+    "video_02_tdd_ownership"
+]
