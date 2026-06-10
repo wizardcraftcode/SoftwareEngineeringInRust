@@ -46,9 +46,9 @@ Architectural Lesson: Design your API by what you callers want to do - not by wh
 # 🎨 Visual Grammar: The Ownership Sigil
 When exploring the code and watching the companion videos, system behaviors are mapped using a centralized architectural sigil. Keep this legend in mind as you trace data flowing through the modules:
 
-🔵 Blue Arrows: Denote Ownership.
-
-🔴 Red Vectors: Trace an exclusive, mutable borrow (&mut T) or direct full ownership transfer. All other system pathways are temporarily locked out.
+* 🌌 **Dotted Blue Vectors:** Denote full **Ownership** transfer. The data is moving to a new context entirely.
+* 🟡 **Dashed Yellow Vectors:** Trace a **Shared Borrow** (`&T`). Multiple concurrent paths can safely read and observe this data, but it is immutable.
+* 🔴 **Solid Red Vectors:** Trace an **Exclusive, Mutable Borrow** (`&mut T`). The system enters a lockout phase—only this path can alter the data, and all other channels are blocked.
 
 By mapping your tests using these constraints, your Rust designs become intentional instead of accidental.
 
@@ -56,8 +56,8 @@ By mapping your tests using these constraints, your Rust designs become intentio
 1. Clone the Masterclass:
 
 ```Bash
-git clone [https://github.com/YOUR_USERNAME/rust-architecture-masterclass.git](https://github.com/YOUR_USERNAME/rust-architecture-masterclass.git)
-cd rust-architecture-masterclass
+git clone git clone (https://github.com/wizardcraftcode/SoftwareEngineeringInRust.git)[https://github.com/wizardcraftcode/SoftwareEngineeringInRust.git]
+cd SoftwareEngineeringInRust
 ```
 
 2. Run a Specific Module's Tests:
@@ -71,8 +71,8 @@ cargo test -p video_02_tdd_ownership
 Open the target module's src/main.rs file alongside the companion YouTube video to see exactly how moving the ownership boundaries changes the compiler's behavioral design.
 
 # 💬 Join the Architecture Discussion
+
 If you have questions about how these structural patterns scale to large production systems, or if you want to debate alternative design constraints:
 
-- 🔔 Subscribe for Future Phase Modules
-
-- 💬 Drop a comment on the respective video with your architectural refactoring ideas!
+* 🔔 **Subscribe to the Channel:** [Wizard Craft Code on YouTube](https://tinyurl.com/SEInRustVideos) 
+* 💬 **Get Involved:** Drop a comment on the respective video module with your architectural refactoring ideas. We actively read and debate alternative design patterns!
