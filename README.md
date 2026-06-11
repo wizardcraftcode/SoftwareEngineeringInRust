@@ -20,6 +20,7 @@ rust-architecture-masterclass/
 ├── Cargo.toml                  <-- Workspace manifest
 ├── video_01_the_diagram/       <-- Tracking state via the central sigil
 ├── video_02_tdd_ownership/     <-- Prototyping data boundaries with tests
+├── video_03_bad_getters/       <-- Why getters are a bad idea and what to do instead
 ```
 
 # 🗺️ Masterclass Curriculum & Code Index
