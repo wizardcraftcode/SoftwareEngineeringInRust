@@ -21,6 +21,7 @@ rust-architecture-masterclass/
 ├── video_01_the_diagram/       <-- Tracking state via the central sigil
 ├── video_02_tdd_ownership/     <-- Prototyping data boundaries with tests
 ├── video_03_bad_getters/       <-- Why getters are a bad idea and what to do instead
+├── video_04_methods_vs_free/   <-- How to choose between making a free function and a method
 ```
 
 # 🗺️ Masterclass Curriculum & Code Index
@@ -41,6 +42,11 @@ Architectural Lesson:  TDD and the borrow checker work together to help you buil
 Core Concept: Traditional getters give access that causes the borrow checker to be mad
 
 Architectural Lesson: Design your API by what you callers want to do - not by what you are storing.
+
+### 📁 Module 04: Stop Forcing Classes into Rust: Methods vs. Free Functions
+Core Concept: How to choose where to place functionality in your system
+
+Architectural Lesson: Free functions can be a good solution forever or they may be placeholders until your system grows and needs more architecture 
 
 ** Rest of series to come **
 

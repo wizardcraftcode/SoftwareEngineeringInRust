@@ -3,4 +3,5 @@ members = [
     "video_01_the_diagram",
     "video_02_tdd_ownership"
     "video_03_bad_getters"
+	"video_04_methods_vs_free"
 ]

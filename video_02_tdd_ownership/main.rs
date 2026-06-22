@@ -45,9 +45,6 @@ impl Player {
     }
 }
 
-impl Player {
-
-}
 
 
 mod test_player {
