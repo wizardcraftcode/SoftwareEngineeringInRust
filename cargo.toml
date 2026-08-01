@@ -9,4 +9,5 @@ members = [
 	"video_07_open_polymorphism"
 	"video_07b_hybrid_polymorphism"
 	"video_08_state_machine_enums"
+	"video_08b_nested_state_machines"
 ]
