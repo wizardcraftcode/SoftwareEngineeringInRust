@@ -12,41 +12,53 @@ This repository is designed like an engineering drafting board. The code here st
 
 ## 🛠️ Repository Architecture
 
-This repository is organized as a unified **Cargo Workspace**. Each directory corresponds to a specific phase and episode in the architectural masterclass, allowing you to isolate the exact code state seen on your screen.
+This repository is organized as a unified **Cargo Workspace**. Each directory corresponds to a specific phase and episode in the architectural class, allowing you to isolate the exact code state seen on your screen.
 
 ```text
 rust-architecture-masterclass/
-├── README.md                   <-- You are here
-├── Cargo.toml                  <-- Workspace manifest
-├── video_01_the_diagram/       <-- Tracking state via the central sigil
-├── video_02_tdd_ownership/     <-- Prototyping data boundaries with tests
-├── video_03_bad_getters/       <-- Why getters are a bad idea and what to do instead
-├── video_04_methods_vs_free/   <-- How to choose between making a free function and a method
+├── README.md                            <-- You are here
+├── Cargo.toml                           <-- Workspace manifest
+├── video_01_the_diagram/                <-- Tracking state via the central sigil
+├── video_02_tdd_ownership/              <-- Prototyping data boundaries with tests
+├── video_03_bad_getters/                <-- Why getters are a bad idea and what to do instead
+├── video_04_methods_vs_free/            <-- How to choose between making a free function and a method
+├── video_05_proliferation_of_clones/    <-- What do clones tell you about your design?
+├── video_06_closed_polymorphism/        <-- Collecting objects of different types using enums
+├── video_07_open_polymorphism/          <-- Collecting objects of different types using Box
+├── video_07b_hybrid_polymorphism/       <-- Adding traits to video 6's solution
+├── video_08_state_machine_enums/        <-- Building a simple state machine with enums
+├── video_08b_nested_state_machines/     <-- Nesting state machines to control complexity
+├── video_09_typestate/                  <-- TypeState pattern for compile time safety  
 ```
 
-# 🗺️ Masterclass Curriculum & Code Index
+# 🗺️  Curriculum & Code Index
 ## 🔹 Phase 1: Ownership and Borrowing and how they affect API design
-### 📁 Module 01: The Diagram
+### 📁 Phase 01: Ownership and Your API (Videos 1 - 5)
 Core Concept: Establishing the visual grammar of Rust memory tracking. Learning to read the blueprint canvas and understanding the central permission sigil.
 
 Architectural Lesson: Moving past compiler friction by visualizing exclusive mutations vs. shared borrows.
 
 
-### 📁 Module 02: Designing Rust Ownership Without Guesswork
-Core Concept: Test-Driven Development (TDD) as a system design layer, not a verification layer.
+### 📁 Phase 02: Type Driven Architecture (Videos 6 - 13)
+Core Concept: How Selecting your types drives your code design
 
-Architectural Lesson:  TDD and the borrow checker work together to help you build clean APIs
+Architectural Lessons: Enums, The Typestate Pattern and Designing for Failures
 
 
-### 📁 Module 03: Your Getters are Ruining Your Rust Code
-Core Concept: Traditional getters give access that causes the borrow checker to be mad
+### 📁 Phase 03: Behavioral Abstraction (Videos 14-22)
+Core Concept: Traits have a LOT of power and can help you in a LOT of ways
 
-Architectural Lesson: Design your API by what you callers want to do - not by what you are storing.
+Architectural Lessons: Examples: designing type conversion and dual traits, choosing behavior at run time, Closures
 
-### 📁 Module 04: Stop Forcing Classes into Rust: Methods vs. Free Functions
-Core Concept: How to choose where to place functionality in your system
+### 📁 Phase 04: Architecture (Videos 23 - 26)
+Core Concept: Structuring the big parts or your system and how they interact
 
-Architectural Lesson: Free functions can be a good solution forever or they may be placeholders until your system grows and needs more architecture 
+Architectural Lesson: Design boundaries, dependency injection, type erasure 
+
+### 📁 Phase 05: Advanced Ownership (Videos 27 - ?)
+Core Concept: Run-time borrow checking
+
+Architectural Lesson: So many things to think about once we get there!!!! 
 
 ** Rest of series to come **
 

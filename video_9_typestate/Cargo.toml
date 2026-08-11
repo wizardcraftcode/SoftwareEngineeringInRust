@@ -1,0 +1,10 @@
+[package]
+name = "Typestate"
+version = "0.1.0"
+edition = "2026"
+
+[workspace]
+members = ["matching", "market"]
+resolver = "2"
+
+[dependencies]
