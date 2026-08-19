@@ -28,7 +28,8 @@ rust-architecture-masterclass/
 ├── video_07b_hybrid_polymorphism/       <-- Adding traits to video 6's solution
 ├── video_08_state_machine_enums/        <-- Building a simple state machine with enums
 ├── video_08b_nested_state_machines/     <-- Nesting state machines to control complexity
-├── video_09_typestate/                  <-- TypeState pattern for compile time safety  
+├── video_09_typestate/                  <-- TypeState pattern for compile time safety 
+├── video_10_designing_errors/           <-- Designing custom error enums 
 ```
 
 # 🗺️  Curriculum & Code Index

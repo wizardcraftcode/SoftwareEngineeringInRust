@@ -11,4 +11,5 @@ members = [
 	"video_08_state_machine_enums"
 	"video_08b_nested_state_machines"
 	"video_09_typestate"
+	"video_10_designing_errors"
 ]
