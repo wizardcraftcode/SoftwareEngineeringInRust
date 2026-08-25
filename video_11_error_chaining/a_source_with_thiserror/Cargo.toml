@@ -1,0 +1,9 @@
+[package]
+name = "a_source_with_thiserror"
+version = "0.1.0"
+edition = "2024"
+[lib]
+name = "lib"
+path = "src/config.rs"
+[dependencies]
+thiserror = "2.0.20"

@@ -1,0 +1,6 @@
+
+
+
+[workspace]
+members = ["d_transparent","a_source", "a_source_with_thiserror", "b_map_err", "c_transpose_deferred"]
+resolver = "2"

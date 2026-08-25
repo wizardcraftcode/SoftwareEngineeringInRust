@@ -30,6 +30,7 @@ rust-architecture-masterclass/
 ├── video_08b_nested_state_machines/     <-- Nesting state machines to control complexity
 ├── video_09_typestate/                  <-- TypeState pattern for compile time safety 
 ├── video_10_designing_errors/           <-- Designing custom error enums 
+├── video_11_error_chaining/             <-- Designing error chaining (source, map_error vs. from) 
 ```
 
 # 🗺️  Curriculum & Code Index
