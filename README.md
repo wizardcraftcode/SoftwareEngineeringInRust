@@ -31,6 +31,7 @@ rust-architecture-masterclass/
 ├── video_09_typestate/                  <-- TypeState pattern for compile time safety 
 ├── video_10_designing_errors/           <-- Designing custom error enums 
 ├── video_11_error_chaining/             <-- Designing error chaining (source, map_error vs. from) 
+├── video_12_error_contexts/             <-- Adding context information to errors 
 ```
 
 # 🗺️  Curriculum & Code Index

@@ -13,4 +13,5 @@ members = [
 	"video_09_typestate"
 	"video_10_designing_errors"
 	"video_11_error_chaining"
+	"video_12_error_contexts"
 ]
